@@ -1,0 +1,225 @@
+:root{
+    --bg:#111111;
+    --lightgray:#222222;
+}
+.header{
+    top:-18px;
+    left:0;
+    position:fixed;
+    height: 70px;
+    background: var(--bg);
+}
+.header__logo{
+    padding: 25px 0 0px 0;
+}
+.services,
+.work,
+.latest,
+.callto.sp__callto,
+.about,
+.services-page,
+.logo,
+.portfolio,
+.blog,
+.blog-details,
+.contact-widget,
+.contact,
+.counter__item{
+    background: var(--bg);
+}
+.footer, .set-bg, .counter {
+    background: #080808;
+}
+a{
+    color: white;
+}
+.primary-btn::before, .primary-btn::after {
+    border-color: aqua
+}
+.invert-icon{
+    width: 40px;
+    filter: invert();
+}
+#beforeno::before{
+    content: "#";
+}
+#afterplus::after{
+    content: "+";
+}
+.slicknav_btn{
+    background: var(--bg);
+}
+@media (max-width: 991px){
+.container, .container-sm {
+    max-width: 100%;
+}
+.slicknav_nav{
+    background: var(--bg);
+}
+.slicknav_nav a:hover{
+    color: aqua;
+}
+}
+.service-title{
+    color: white;
+    border-bottom: 5px solid white;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.our_head{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.blog_head{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.advertisements{
+    margin: 15px;
+    width: calc(33% - 27px);
+    height: fit-content;
+    text-align: center;
+    float: right;
+    border:1px solid #555555;
+    border-radius: 5px;
+}
+.advertisements h5{
+    color: gainsboro;
+    border-bottom: 1px solid #555555;
+    margin:0px 13% 10px;
+    width: 74%;
+}
+.advertisements img{
+    margin: 5px 10px;
+    width: calc(100% - 20px);
+}
+@media (max-width: 991px){
+    .advertisements{
+        margin:15px auto;
+        width: calc(100% - 50px);
+        max-width: auto;
+        float: none;
+    }
+}
+@media (min-width:520px) and (max-width: 991px){
+    .advertisements img{
+        width: calc(50% - 20px);
+        float: left;
+    }
+}
+
+
+
+.popup{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    position: fixed;
+    display:flex ;
+    z-index: 20;
+    display: none;
+}
+.popup_window{
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    background: #111111;
+    text-align: center;
+    border-radius: 10px;
+}
+.popup_window i{
+    color: green;
+    padding-bottom: 20px;
+}
+.popup_window h5{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#ok_button{
+    color: white;
+    font-size: large;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#popup_bg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.popup.active{
+    display: flex;    
+}
+@media(max-width:640px){
+    .popup_window{
+        width: calc(100% - 20px);
+    }
+}
+/*Price page**********************************/
+
+.price_box{
+    width: 300px;
+    border:1px solid gray;
+    border-radius: 10px;
+    color: rgb(204, 201, 201);
+    transition: all 0.3s linear;
+}
+.price_box:hover{
+    border:1px solid lightgray;
+}
+.price_head{
+    border-radius: 10px 10px 0 0;
+    background: teal;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.price_amount{
+    text-align: center;
+    background:#13614f;
+    border-bottom: 1px solid lightgray;
+    padding: 50px 0;
+    color: white;
+}
+.price_box ul{
+    margin: 20px 20px 20px 30px;
+    min-height: 220px;
+}
+.pricebtn{
+    width: calc(100% - 30px);
+    margin: 15px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background: teal;
+    color: white;
+    border: 0;
+    font-weight: bold;
+    transition: all 0.3s linear;
+}
+.price_box i{
+    color: orangered;
+}
+.pricebtn:hover{
+    opacity: 0.75;
+}
+.software .price_head, .software .pricebtn{
+    background: brown;
+}
+.software .price_amount{
+    background: maroon;
+}
+.true .price_head, .true .pricebtn{
+    background: green;
+}
